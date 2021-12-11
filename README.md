@@ -18,7 +18,7 @@ Here the program checks if the index at the current row and column on the grid i
 
 If the value is found to be safe.It is temporarily added to the grid and we pass that grid in along with the row and column plus one.Then the loop continues, until all 9 numbers are tested.The grid location is reset in between so that checkSafe doesn’t have to test if the val at the current index.
 
-	The solution function will continue to be recursed, resetting the column value to zero once it reaches nine.The row is incremented by one at the same time.Once the recursion causes enough incrementing to where the column and row value are greater than eighth.At that point, the recursion stops.The last value is filled , the grid is printed and the function returns true.
+The solution function will continue to be recursed, resetting the column value to zero once it reaches nine.The row is incremented by one at the same time.Once the recursion causes enough incrementing to where the column and row value are greater than eighth.At that point, the recursion stops.The last value is filled , the grid is printed and the function returns true.
 
 
 Running the Program
