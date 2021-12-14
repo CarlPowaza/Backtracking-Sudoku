@@ -1,14 +1,14 @@
-Backtracking Sudoku Solver
+<h1> Backtracking Sudoku Solver </h1>
 
 Carl Powaza
 
-
-Objective
+<p>
+<h2>Objective</h2>
 This program takes in an incomplete sudoku board from a text file. Then turns it into a list and solves using backtracking.
+</p>
 
-
-
-Implementation Details
+<p>
+<h2>Implementation Details</h2>
 The raw String from the read-in text file is split into a list of strings in the createGrid() function and returned to the grid list in the main function.
 
 This grid is then passed to solution() along with zeros for the row and column.I did this because it was necessary to have parameters for row and column to help with passing those values during recursion.
@@ -19,11 +19,12 @@ Here the program checks if the index at the current row and column on the grid i
 If the value is found to be safe.It is temporarily added to the grid and we pass that grid in along with the row and column plus one.Then the loop continues, until all 9 numbers are tested.The grid location is reset in between so that checkSafe doesn’t have to test if the val at the current index.
 
 The solution function will continue to be recursed, resetting the column value to zero once it reaches nine.The row is incremented by one at the same time.Once the recursion causes enough incrementing to where the column and row value are greater than eighth.At that point, the recursion stops.The last value is filled , the grid is printed and the function returns true.
+</p>
+<p>
 
-
-Running the Program
+<h2>Running the Program</h2>
 This program must be run by executing py final_project.py example.txt Where example.txt is a text file in the same folder as the python file.The text file should have 9 rows of 9 numbers, separated by a space and a newline between rows.The empty fields should be represented as a “0”.The program assumes all numbers in the text file will be valid as per Sudoku rules.
-
+</p>
 
 
 
